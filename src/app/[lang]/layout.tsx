@@ -14,6 +14,8 @@ export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
+const SITE_URL = "https://graphverse.vercel.app";
+
 export const viewport: Viewport = {
   themeColor: "#0b1026",
   colorScheme: "dark",
@@ -25,8 +27,8 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
   const t = getDictionary(lang);
   return {
     metadataBase: new URL(
-      process.env.VERCEL_PROJECT_PRODUCTION_URL
-        ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      process.env.NODE_ENV === "production"
+        ? SITE_URL
         : `http://localhost:${process.env.PORT ?? 3000}`,
     ),
     title: t.meta.title,

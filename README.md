@@ -18,7 +18,9 @@ npm run dev      # http://localhost:3000
 npm run build    # production build
 ```
 
-## Deploy to Vercel (free `*.vercel.app` domain)
+## Deploy to Vercel
+
+Production domain: **https://graphverse.vercel.app** (Vercel project name `graphverse`).
 
 ```bash
 vercel login
