@@ -14,7 +14,7 @@ export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
-const SITE_URL = "https://graphverse.vercel.app";
+const SITE_URL = "https://grapherse.vercel.app";
 
 export const viewport: Viewport = {
   themeColor: "#0b1026",
