@@ -20,7 +20,7 @@ npm run build    # production build
 
 ## Deploy to Vercel
 
-Production domain: **https://graphverse.vercel.app** (Vercel project name `graphverse`).
+Production domain: **https://grapherse.vercel.app** — assign it under Vercel → Project → Settings → Domains.
 
 ```bash
 vercel login
